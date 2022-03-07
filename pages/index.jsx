@@ -51,7 +51,7 @@ export default function Home({some_data}) {
 export async function getStaticProps(context) {
     return {
         props: {
-            some_data
+            some_data: []
         }, // will be passed to the page component as props
     }
 }
