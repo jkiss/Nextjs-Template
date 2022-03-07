@@ -6,7 +6,7 @@
  */
 
 import Head from 'next/head'
-import Image from 'next/image'
+// import Image from 'next/image'
 import Link from 'next/link'
 
 import Test from '../components/Test'
@@ -37,12 +37,12 @@ export default function Home({some_data}) {
                     </a>
                 </Link>
 
-                <Image
+                {/* <Image
                     src="/images/profile.jpg" // Route of the image file
                     height={144} // Desired size with correct aspect ratio
                     width={144} // Desired size with correct aspect ratio
                     alt="Your Name"
-                />
+                /> */}
             </div>
         </Layout>
     )
