@@ -49,7 +49,7 @@ export default function Home({some_data}) {
                         alt="Your Name"
                         placeholder="blur"
                         layout="responsive"
-                        sizes="50vw"
+                        // sizes="100vw"
                     />
                 </div>
             </div>
