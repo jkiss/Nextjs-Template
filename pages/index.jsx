@@ -6,7 +6,7 @@
  */
 
 import Head from 'next/head'
-// import Image from 'next/image'
+import Image from 'next/image'
 import Link from 'next/link'
 
 import Test from '../components/Test'
@@ -15,6 +15,10 @@ import Layout from '../components/Layout'
 import classNames from 'classnames/bind'
 import styles from '../styles/index.module.scss'
 let cx = classNames.bind(styles)
+
+// res
+import img_profile from '../public/images/profile.jpg'
+import img_universe from '../public/images/universe.jpg'
 
 export default function Home({some_data}) {
     return (
@@ -37,12 +41,17 @@ export default function Home({some_data}) {
                     </a>
                 </Link>
 
-                {/* <Image
-                    src="/images/profile.jpg" // Route of the image file
-                    height={144} // Desired size with correct aspect ratio
-                    width={144} // Desired size with correct aspect ratio
-                    alt="Your Name"
-                /> */}
+                <div className={cx('image-box')}>
+                    <Image
+                        src={img_universe} // Route of the image file
+                        // height={144} // Desired size with correct aspect ratio
+                        // width={144} // Desired size with correct aspect ratio
+                        alt="Your Name"
+                        placeholder="blur"
+                        layout="responsive"
+                        sizes="50vw"
+                    />
+                </div>
             </div>
         </Layout>
     )
