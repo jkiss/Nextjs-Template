@@ -2,13 +2,14 @@
  * @Author: Mr.B 
  * @Date: 2022-03-04 20:32:10 
  * @Last Modified by: Mr.B
- * @Last Modified time: 2022-03-30 19:24:42
+ * @Last Modified time: 2022-03-30 19:53:05
  */
 
 import { useRouter } from 'next/router'
 
 import classNames from 'classnames/bind'
-import styles from '../../styles/news/index.module.scss'
+import styles from '@/styles/news/index.module.scss'
+
 let cx = classNames.bind(styles)
 
 const News = ({post_id}) => {
@@ -18,7 +19,7 @@ const News = ({post_id}) => {
         return <div>Loading...</div>
     }
 
-    return (<div>
+    return (<div className={cx('yellow')}>
         this is a news: {post_id}.
     </div>);
 }
