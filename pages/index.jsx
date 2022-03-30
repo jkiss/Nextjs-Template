@@ -13,7 +13,7 @@ import Test from '../components/Test'
 import Layout from '../components/Layout'
 
 import classNames from 'classnames/bind'
-import styles from '../styles/index.module.scss'
+import styles from '../styles/home/index.module.scss'
 let cx = classNames.bind(styles)
 
 // res
